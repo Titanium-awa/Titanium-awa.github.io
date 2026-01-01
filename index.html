@@ -1,41 +1,69 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>我的第一个网页</title>
-    <meta charset="UTF-8">  <!-- 告诉浏览器用UTF-8编码，避免乱码 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- 统一移动端显示 -->
-    <style>
-        /* 在这里写装修方案 */
-        body { background-color: #f5f5f5; }
-        h1 { color: darkblue; text-align: center; }
-        .post { background: white; padding: 20px; margin: 20px; }
-    </style>
+    <title>我的个人博客</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- 在这里盖房子 -->
-    <h1>欢迎来到我的小站</h1>
-    <div class="post">
-        <h2>今天天气真好</h2>
-        <p>这是我第一次写网页，居然这么简单！</p>
-    </div>
-<div style="
-    background: lightblue;
-    padding: 40px;
-    border: 5px solid red;
-    margin: 30px;
-    width: 200px;
-">
-    <p>这是一个盒子模型演示</p>
-    <p>观察padding、border、margin的效果</p>
-</div>
-
-<div style="
-    background: lightgreen;
-    padding: 10px;
-    border: 2px dashed black;
-    margin: 15px;
-">
-    第二个盒子，不同的设置
-</div>
+    <!-- 导航栏 -->
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="about.html">关于我</a>
+        <a href="archive.html">文章归档</a>
+        <a href="contact.html">联系</a>
+    </nav>
+    
+    <!-- 博客标题区 -->
+    <header class="blog-header">
+        <h1 class="blog-title">我的数字花园</h1>
+        <p class="blog-description">在这里，我记录思考、分享发现、种植想法</p>
+    </header>
+    
+    <!-- 文章列表 -->
+    <main class="post-list">
+        <article class="post">
+            <h2 class="post-title">
+                <a href="posts/first-post.html">我的第一篇博客：为什么开始写作</a>
+            </h2>
+            <div class="post-meta">
+                <time datetime="2023-10-27">2023年10月27日</time> • 阅读需要3分钟
+            </div>
+            <p class="post-excerpt">
+                在这个信息爆炸的时代，为什么我还要开一个博客？这篇文章记录了我开始写作的初衷，以及我希望通过这个空间实现什么...
+            </p>
+        </article>
+        
+        <article class="post">
+            <h2 class="post-title">
+                <a href="posts/second-post.html">掌握盒子模型：理解网页布局的基础</a>
+            </h2>
+            <div class="post-meta">
+                <time datetime="2023-10-25">2023年10月25日</time> • 阅读需要5分钟
+            </div>
+            <p class="post-excerpt">
+                学习网页开发时，盒子模型是必须掌握的第一个核心概念。本文用生活化的比喻解释padding、margin和border...
+            </p>
+        </article>
+        
+        <article class="post">
+            <h2 class="post-title">
+                <a href="posts/third-post.html">GitHub Pages 使用指南：免费部署你的网站</a>
+            </h2>
+            <div class="post-meta">
+                <time datetime="2023-10-20">2023年10月20日</time> • 阅读需要4分钟
+            </div>
+            <p class="post-excerpt">
+                无需服务器，无需复杂配置。一步步教你如何使用GitHub Pages免费部署静态网站，让全世界都能访问你的作品...
+            </p>
+        </article>
+    </main>
+    
+    <!-- 底部信息 -->
+    <footer>
+        <p>© 2023 我的数字花园 • 通过 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 共享 • 由 GitHub Pages 驱动</p>
+        <p>联系邮箱：你的邮箱@example.com</p>
+    </footer>
 </body>
 </html>
